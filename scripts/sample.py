@@ -58,5 +58,5 @@ def sample(mode,inputx,ratio):
 
 if __name__ == "__main__":
     #print_help()
-    sample_ffm("tr.ffm",0.1)
-    sample_ffm("va.ffm",0.1)
+    sample_ffm("tr.ffm","tr.ffm.group",0.1)
+    sample_ffm("va.ffm","va.ffm.group",0.1)
