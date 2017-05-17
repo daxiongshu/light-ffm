@@ -317,10 +317,11 @@ void mypredict_batch(Option opt, ffm_model *model, int* feamap, int num_fea)
 		}
 
 		yp = 1.0/(1+exp(-yp));
-                    if (opt.hasLabel)
-                  	f_out <<i<<","<< yp << ","<<y<<"\n";
-                    else
-                  	f_out <<i<<","<< yp << "\n";
+                    //if (opt.hasLabel)
+                    // 	f_out <<i<<","<< yp << ","<<y<<"\n";
+                    //else
+                    //	f_out <<i<<","<< yp << "\n";
+		f_out<<yp<<"\n";
             }
 	}
         ffm_destroy_problem(&va);
